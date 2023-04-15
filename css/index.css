@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  background: #ffffff;
+  color: black;
+  width: 100%;
+  font-style: normal;
+  font-family: "IBM Plex Mono";
+  height: 100%;
+  position: absolute;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.conteinerBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.name {
+  height: 52px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  color: #4520ab;
+  letter-spacing: -0.08em;
+}
+
+.conteinerHead {
+  width: 500px;
+  height: 56px;
+  margin-top: 86px;
+  margin-bottom: 60px;
+  border: 2px solid #111111;
+  border-radius: 14px;
+  /* position: absolute; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head {
+  /* position: absolute; */
+  width: 350px;
+  height: 27px;
+  margin-left: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  opacity: 0.4;
+  border: none;
+  letter-spacing: -0.05em;
+  font-family: "IBM Plex Mono";
+}
+
+.buttonHeader {
+  /* position: absolute; */
+  width: 107px;
+  height: 38.08px;
+  background: #111111;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  font-family: "IBM Plex Mono";
+  letter-spacing: -0.03em;
+  /* position: relative; */
+}
+
+.conteinerGreat {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 222%;
+  letter-spacing: -0.03em;
+  margin-bottom: 60px;
+  min-height: auto;
+  justify-content: center;
+}
+
+.greetingsRUS {
+  /* position: relative; */
+  border-right: 1px solid #111111;
+  width: 250px;
+  /* display: flex; */
+  border-radius: 8px 0 0 8px;
+  background-color: #f0f0f0;
+}
+
+.index {
+  padding-right: 28px;
+  font-weight: 600;
+  padding-left: 12px;
+}
+
+.greetingsEN {
+  border-left: 1px solid #111111;
+  width: 250px;
+  border-radius: 0 8px 8px 0;
+  background-color: #adadad;
+}
+
+.greetingEnWord .index {
+  display: none;
+}
+
+.greetingEnWord {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 28px;
+}
+
+.deleteWord {
+  margin-right: 10px;
+  margin-top: 4px;
+  border: none;
+  background-color: #adadad;
+}
+
+.deleteWord img {
+  height: 18px;
+  width: 18px;
+}
+
+.deleteAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 176px;
+  height: 38px;
+  background: #adadad;
+  border-radius: 8px;
+}
+
+.deleteSign {
+  margin-left: 10px;
+}
+
+.buttonDelete {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.05em;
+  color: #0f0f0f;
+  border: none;
+  background: #adadad;
+  margin-right: 10px;
+}
+
+.deleteAllWord {
+  margin-top: 2px;
+  border: none;
+  background: #adadad;
+}
+
+.deleteAllWord img {
+  height: 24px;
+  width: 24px;
+}
+
+.tooltipRus,
+.tooltipEn {
+  line-height: 20px;
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 8px 16px 10px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  font-size: 16px;
+}
+
+.tooltipRus {
+  margin-left: -120px;
+  margin-top: -36px;
+}
+
+.tooltipEn {
+  margin-left: -18px;
+  margin-top: -36px;
+}
+
+@media (max-width: 768px) {
+  .conteinerBody {
+    height: 664px;
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .name {
+    height: 47px;
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: -0.07em;
+    margin: 0;
+  }
+
+  .conteinerHead {
+    width: 328px;
+    height: 56px;
+    margin-top: 76px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .head {
+    width: 195px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
+  }
+
+  .buttonHeader {
+    width: 107px;
+    height: 38px;
+  }
+
+  .conteinerGreat {
+    width: 328px;
+    margin-bottom: 0;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  .greetingsRUS,
+  .greetingsEN {
+    width: 328px;
+  }
+
+  .index {
+    padding-left: 12px;
+    padding-right: 16px;
+    font-weight: 600;
+  }
+
+  .greetingEnWord {
+    padding-left: 16px;
+  }
+
+  .greetingEnWord div {
+    margin-top: -36px;
+    margin-left: -15px;
+  }
+
+  .deleteWord img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .deleteAll {
+    margin-top: 42px;
+  }
+
+  .tooltipEn {
+    font-size: 16px;
+  }
+
+  .tooltipRus {
+    font-size: 16px;
+  }
+}
